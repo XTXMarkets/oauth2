@@ -97,6 +97,12 @@ const (
 	// using HTTP Basic Authorization. This is an optional style
 	// described in the OAuth2 RFC 6749 section 2.3.1.
 	AuthStyleInHeader AuthStyle = 2
+
+	// AuthStyleInHeaderNoEscape sends the client_id and client_password
+	// using the same methodology as AuthStyleInHeader, however it doesn't
+	// urlencode the client_id and client_password. Autodetect won't attempt
+	// to detect this AuthStyle
+	AuthStyleInHeaderNoEscape AuthStyle = 3
 )
 
 var (
