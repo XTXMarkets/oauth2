@@ -100,7 +100,7 @@ const (
 
 	// AuthStyleInHeaderNoEscape sends the client_id and client_password
 	// using the same methodology as AuthStyleInHeader, however it doesn't
-	// urlencode the client_id and client_password, autodetect won't attempt
+	// urlencode the client_id and client_password. Autodetect won't attempt
 	// to detect this AuthStyle
 	AuthStyleInHeaderNoEscape AuthStyle = 3
 )
